@@ -1,12 +1,14 @@
 package com.example.validardocumentosrabbitmq.dto;
 
 
+import java.util.List;
+
 public class DocumentoStatus {
     private DocumentoDTO documento;
     private String status;
     private String message;
 
-    public DocumentoStatus(DocumentoDTO documento, String status, String message) {
+    public DocumentoStatus(List<DocumentoDTO> documentos, String status, String message) {
         this.documento = documento;
         this.status = status;
         this.message = message;
